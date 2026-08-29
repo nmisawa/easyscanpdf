@@ -10,6 +10,12 @@
             "state" : "new",
             "value" : "EasyScan PDF"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EasyScan PDF"
+          }
         }
       }
     },
@@ -22,12 +28,24 @@
             "state" : "new",
             "value" : "EasyScan PDF"
           }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EasyScan PDF"
+          }
         }
       }
     },
     "NSCameraUsageDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used to scan documents and turn them into PDFs."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -39,6 +57,12 @@
     "NSPhotoLibraryAddUsageDescription" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used to save PDF pages as images to your photo library."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",

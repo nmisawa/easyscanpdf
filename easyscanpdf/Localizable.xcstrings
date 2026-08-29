@@ -1,12 +1,15 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
-    "%lld" : {
-
-    },
     "app.name" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "EasyScan PDF"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -18,6 +21,12 @@
     "common.error" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -46,6 +55,12 @@
     "common.done" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -57,6 +72,12 @@
     "common.ok" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -68,6 +89,12 @@
     "common.save" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -79,6 +106,12 @@
     "document_detail.action.save_as_jpeg" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save to Photos as JPEG"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -90,6 +123,12 @@
     "document_detail.action.save_as_png" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save to Photos as PNG"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -101,6 +140,12 @@
     "document_detail.field.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Title"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -112,6 +157,12 @@
     "document_detail.label.created_at" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Created"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -123,6 +174,12 @@
     "document_detail.label.filename" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "File"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -134,6 +191,12 @@
     "document_detail.label.page_count" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pages"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -145,6 +208,12 @@
     "document_detail.ocr.empty" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No OCR text was found."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -156,6 +225,12 @@
     "document_detail.photo_save.success" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saved to your photo library."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -167,6 +242,12 @@
     "document_detail.section.info" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Info"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -178,6 +259,12 @@
     "document_detail.section.ocr" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OCR Text"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -189,6 +276,12 @@
     "document_detail.section.preview" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF Preview"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -200,6 +293,12 @@
     "document_list.action.new_scan" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Scan"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -211,6 +310,12 @@
     "document_list.empty.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Tap the scan button in the top right to create a searchable PDF."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -222,6 +327,12 @@
     "document_list.empty.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Documents Yet"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -233,6 +344,12 @@
     "document.row.page_count" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%lld pages"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -244,6 +361,12 @@
     "onboarding.action.later" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maybe Later"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -255,6 +378,12 @@
     "onboarding.action.start_scan" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Scanning"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -266,6 +395,12 @@
     "onboarding.footnote" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shown only the first time. Camera access is required to start scanning."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -277,6 +412,12 @@
     "onboarding.step.ocr.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Run OCR so the text inside the PDF can be searched later."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -288,6 +429,12 @@
     "onboarding.step.ocr.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recognize Text"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -299,6 +446,12 @@
     "onboarding.step.save.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save as a searchable PDF you can open anytime from the list."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -310,6 +463,12 @@
     "onboarding.step.save.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Save as PDF"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -321,6 +480,12 @@
     "onboarding.step.scan.description" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photograph your document and capture it page by page."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -332,6 +497,12 @@
     "onboarding.step.scan.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan a Document"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -343,6 +514,12 @@
     "onboarding.subtitle" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Capture paper documents and save them as searchable PDFs."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -354,6 +531,12 @@
     "onboarding.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Welcome to EasyScan PDF"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -365,6 +548,12 @@
     "ocr.error.cgimage_unavailable" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to convert the image for OCR."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -376,6 +565,12 @@
     "pdf.error.document_unreadable" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The PDF could not be read."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -387,6 +582,12 @@
     "pdf.error.image_conversion_failed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to convert to an image."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -398,6 +599,12 @@
     "pdf.error.page_count_mismatch" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The number of pages for PDF generation doesn't match."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -409,6 +616,12 @@
     "pdf.error.thumbnail_failed" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to generate the thumbnail image."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -420,6 +633,12 @@
     "pdf.metadata.title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanned Document"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -431,6 +650,12 @@
     "photo.error.access_denied" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo library access isn't allowed. Please enable it in Settings."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -442,6 +667,12 @@
     "scanflow.default_title" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scan %@"
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -453,6 +684,12 @@
     "scanflow.error.no_pages" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pages were captured."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -464,6 +701,12 @@
     "scanflow.progress.ocr" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Running OCR..."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -475,6 +718,12 @@
     "scanflow.progress.pdf" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Generating searchable PDF..."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -486,6 +735,12 @@
     "scanflow.progress.save" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Saving locally..."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -497,6 +752,12 @@
     "scanner.error.empty" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No pages were scanned."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
@@ -508,6 +769,12 @@
     "scanner.error.unavailable" : {
       "extractionState" : "manual",
       "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Document scanning isn't available on this device."
+          }
+        },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
