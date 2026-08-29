@@ -18,23 +18,6 @@
         }
       }
     },
-    "common.error" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Error"
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "エラー"
-          }
-        }
-      }
-    },
     "common.delete" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -65,6 +48,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "完了"
+          }
+        }
+      }
+    },
+    "common.error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Error"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "エラー"
           }
         }
       }
@@ -358,6 +358,23 @@
         }
       }
     },
+    "ocr.error.cgimage_unavailable" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed to convert the image for OCR."
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OCR 用の画像変換に失敗しました。"
+          }
+        }
+      }
+    },
     "onboarding.action.later" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -541,23 +558,6 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "EasyScan PDF へようこそ"
-          }
-        }
-      }
-    },
-    "ocr.error.cgimage_unavailable" : {
-      "extractionState" : "manual",
-      "localizations" : {
-        "en" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "Failed to convert the image for OCR."
-          }
-        },
-        "ja" : {
-          "stringUnit" : {
-            "state" : "translated",
-            "value" : "OCR 用の画像変換に失敗しました。"
           }
         }
       }
