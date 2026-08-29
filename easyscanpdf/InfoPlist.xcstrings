@@ -35,6 +35,17 @@
           }
         }
       }
+    },
+    "NSPhotoLibraryAddUsageDescription" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF を画像化してフォトライブラリに保存するために使用します"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"

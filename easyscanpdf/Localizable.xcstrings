@@ -43,6 +43,17 @@
         }
       }
     },
+    "common.done" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "完了"
+          }
+        }
+      }
+    },
     "common.ok" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -61,6 +72,28 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "保存"
+          }
+        }
+      }
+    },
+    "document_detail.action.save_as_jpeg" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "JPEG としてフォトに保存"
+          }
+        }
+      }
+    },
+    "document_detail.action.save_as_png" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PNG としてフォトに保存"
           }
         }
       }
@@ -116,6 +149,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "OCR テキストは見つかりませんでした。"
+          }
+        }
+      }
+    },
+    "document_detail.photo_save.success" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォトライブラリに保存しました。"
           }
         }
       }
@@ -329,6 +373,28 @@
         }
       }
     },
+    "pdf.error.document_unreadable" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "PDF を読み込めませんでした。"
+          }
+        }
+      }
+    },
+    "pdf.error.image_conversion_failed" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "画像への変換に失敗しました。"
+          }
+        }
+      }
+    },
     "pdf.error.page_count_mismatch" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -358,6 +424,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "スキャン文書"
+          }
+        }
+      }
+    },
+    "photo.error.access_denied" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "フォトライブラリへのアクセスが許可されていません。設定アプリからアクセスを許可してください。"
           }
         }
       }

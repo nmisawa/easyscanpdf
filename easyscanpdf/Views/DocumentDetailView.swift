@@ -8,8 +8,12 @@ struct DocumentDetailView: View {
     @State private var currentDocument: ScannedDocument
     @State private var isShowingShareSheet = false
     @State private var alertMessage: String?
+    @State private var isSavingToPhotoLibrary = false
+    @State private var savedToPhotoLibraryMessage: String?
 
     private let documentStore: DocumentStore
+    private let imageExporter = PDFImageExporter()
+    private let photoLibrarySaver = PhotoLibrarySaver()
 
     init(document: ScannedDocument, documentStore: DocumentStore) {
         _editableTitle = State(initialValue: document.title)
@@ -67,6 +71,21 @@ struct DocumentDetailView: View {
                 } label: {
                     Image(systemName: "square.and.arrow.up")
                 }
+
+                if isSavingToPhotoLibrary {
+                    ProgressView()
+                } else {
+                    Menu {
+                        Button(String(localized: "document_detail.action.save_as_png")) {
+                            saveToPhotoLibrary(format: .png)
+                        }
+                        Button(String(localized: "document_detail.action.save_as_jpeg")) {
+                            saveToPhotoLibrary(format: .jpeg(quality: 0.9))
+                        }
+                    } label: {
+                        Image(systemName: "photo")
+                    }
+                }
             }
         }
         .sheet(isPresented: $isShowingShareSheet) {
@@ -79,6 +98,30 @@ struct DocumentDetailView: View {
             Button(String(localized: "common.ok"), role: .cancel) {}
         } message: {
             Text(alertMessage ?? "")
+        }
+        .alert(String(localized: "common.done"), isPresented: Binding(
+            get: { savedToPhotoLibraryMessage != nil },
+            set: { if !$0 { savedToPhotoLibraryMessage = nil } }
+        )) {
+            Button(String(localized: "common.ok"), role: .cancel) {}
+        } message: {
+            Text(savedToPhotoLibraryMessage ?? "")
+        }
+    }
+
+    private func saveToPhotoLibrary(format: ImageExportFormat) {
+        isSavingToPhotoLibrary = true
+
+        Task {
+            defer { isSavingToPhotoLibrary = false }
+
+            do {
+                let images = try imageExporter.renderImages(from: currentDocument.pdfURL)
+                try await photoLibrarySaver.save(images: images, format: format)
+                savedToPhotoLibraryMessage = String(localized: "document_detail.photo_save.success")
+            } catch {
+                alertMessage = error.localizedDescription
+            }
         }
     }
 

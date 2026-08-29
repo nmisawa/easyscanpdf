@@ -34,6 +34,7 @@ SwiftUI で構成されており、VisionKit で書類を取り込み、Vision �
 - OCR テキスト表示
 - タイトル編集
 - PDF の共有
+- PDF の PNG / JPEG 変換とフォトライブラリへの保存
 
 ## 動作環境
 
@@ -45,6 +46,7 @@ SwiftUI で構成されており、VisionKit で書類を取り込み、Vision �
 
 - 書類スキャンには VisionKit 対応デバイスが必要です
 - 初回利用時にカメラ権限が必要です
+- フォトライブラリへの画像保存には初回利用時に写真への追加権限が必要です
 - シミュレータでは実機と同じスキャン体験にならない場合があります
 
 ## セットアップ
@@ -64,6 +66,7 @@ SwiftUI で構成されており、VisionKit で書類を取り込み、Vision �
 5. 一覧から保存済み書類を開く
 6. 詳細画面で PDF、OCR テキスト、作成情報を確認する
 7. 必要に応じてタイトルを編集し、PDF を共有する
+8. 画像アイコンから PNG / JPEG を選ぶとフォトライブラリに保存できる
 
 ## アーキテクチャ
 
@@ -78,7 +81,7 @@ easyscanpdf/
 ├── Views/
 │   ├── DocumentListView.swift      # 書類一覧画面
 │   ├── ScannerView.swift           # VNDocumentCameraViewController のラッパー
-│   ├── DocumentDetailView.swift    # PDF プレビュー・OCR テキスト・タイトル編集・共有
+│   ├── DocumentDetailView.swift    # PDF プレビュー・OCR テキスト・タイトル編集・共有・画像保存
 │   ├── PDFPreviewView.swift        # PDFView のラッパー
 │   └── ShareSheet.swift           # 共有シートのラッパー
 ├── ViewModels/
@@ -88,6 +91,8 @@ easyscanpdf/
 │   ├── DocumentScannerService.swift # スキャナの利用可否確認とスキャン画像の抽出
 │   ├── OCRService.swift            # OCR 実行（並列処理）
 │   ├── PDFGenerationService.swift  # PDF 生成とサムネイル生成
+│   ├── PDFImageExporter.swift      # PDF ページの PNG / JPEG レンダリング
+│   ├── PhotoLibrarySaver.swift     # フォトライブラリへの画像保存
 │   └── DocumentStore.swift        # ローカル保存とメタデータ管理
 └── Utilities/
     ├── ImageOrientationNormalizer.swift # 画像向きの補正
@@ -124,6 +129,7 @@ EasyScanStorage/
 - 複数ページの OCR は `withThrowingTaskGroup` で並列処理
 - PDF にはスキャン画像を描画した上で不可視テキスト（透明度ほぼゼロ）を重ねる
 - サムネイルは先頭ページから JPEG で生成する
+- PDF → 画像変換は端末の画面倍率に依存しないよう `format.scale = 1` に固定し、長辺が一定ピクセル数（既定 2480px）に収まるようスケールを計算してファイルサイズを抑制
 
 ## 制約
 
@@ -137,7 +143,6 @@ EasyScanStorage/
 - 書類削除機能
 - 一覧検索機能
 - OCR 言語切り替え
-- エクスポート導線の拡充
 - テスト追加
 
 ## ライセンス
