@@ -38,8 +38,8 @@ SwiftUI で構成されており、VisionKit で書類を取り込み、Vision �
 
 ## 動作環境
 
-- iOS 17.0 以上
-- Xcode 16 以上
+- iOS 26.0 以上
+- Xcode 26 以上
 - カメラが使える iPhone / iPad
 
 補足:
