@@ -11,19 +11,18 @@ struct DocumentListView: View {
     }
 
     var body: some View {
-        NavigationStack {
-            List {
+        NavigationSplitView {
+            List(selection: $viewModel.selectedDocument) {
                 ForEach(viewModel.documents) { document in
-                    NavigationLink(value: document) {
-                        DocumentRowView(document: document)
-                    }
-                    .swipeActions(edge: .trailing, allowsFullSwipe: true) {
-                        Button(role: .destructive) {
-                            viewModel.deleteDocument(document)
-                        } label: {
-                            Label(String(localized: "common.delete"), systemImage: "trash")
+                    DocumentRowView(document: document)
+                        .tag(document)
+                        .swipeActions(edge: .trailing, allowsFullSwipe: true) {
+                            Button(role: .destructive) {
+                                viewModel.deleteDocument(document)
+                            } label: {
+                                Label(String(localized: "common.delete"), systemImage: "trash")
+                            }
                         }
-                    }
                 }
                 .onDelete(perform: viewModel.deleteDocuments)
             }
@@ -37,12 +36,6 @@ struct DocumentListView: View {
                 }
             }
             .navigationTitle(String(localized: "app.name"))
-            .navigationDestination(item: $viewModel.selectedDocument) { document in
-                DocumentDetailView(document: document, documentStore: viewModel.documentStore)
-            }
-            .navigationDestination(for: ScannedDocument.self) { document in
-                DocumentDetailView(document: document, documentStore: viewModel.documentStore)
-            }
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button {
@@ -74,7 +67,18 @@ struct DocumentListView: View {
                 guard hasCompletedOnboarding == false, isShowingOnboarding == false else { return }
                 isShowingOnboarding = true
             }
+        } detail: {
+            if let selectedDocument = viewModel.selectedDocument {
+                DocumentDetailView(document: selectedDocument, documentStore: viewModel.documentStore)
+            } else {
+                ContentUnavailableView(
+                    String(localized: "document_list.detail_placeholder.title"),
+                    systemImage: "doc.text.magnifyingglass",
+                    description: Text(String(localized: "document_list.detail_placeholder.description"))
+                )
+            }
         }
+        .navigationSplitViewStyle(.balanced)
     }
 
     private func completeOnboarding(shouldStartScan: Bool) {
@@ -142,9 +146,8 @@ private struct DocumentRowView: View {
                     .foregroundStyle(.secondary)
 
                 Text(
-                    String(
-                        format: String(localized: "document.row.page_count"),
-                        locale: .autoupdatingCurrent,
+                    String.localizedStringWithFormat(
+                        NSLocalizedString("document.row.page_count", comment: ""),
                         document.pageCount
                     )
                 )
