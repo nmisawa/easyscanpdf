@@ -1,0 +1,48 @@
+EasyScan PDF is a simple scanner that turns paper documents into PDFs you can actually search. Digitize contracts, invoices, receipts, business cards, handouts, and handwritten notes right from your iPhone or iPad, then find the one page you need by keyword in the Files app or any PDF viewer.
+
+No clutter, no setup. Open the app, scan, wait a few seconds, and you have a searchable PDF.
+
+WHY EASYSCAN PDF
+
+- Fast, clean scanning
+Uses the built-in iOS document scanner to detect the edges of the paper automatically. Shots taken at an angle are straightened with perspective correction. Capture several pages in a row and combine them into a single PDF.
+
+- OCR that stays on your device
+Recognizes English and Japanese text and layers it onto the PDF as an invisible text layer. The page still looks like your scan, but search, copy, and paste work in any PDF viewer or the Files app. All recognition runs on this device only. Images and text are never sent anywhere.
+
+- Your documents stay on your device
+No account required and no ads. Scanned images, recognized text, and PDFs are never uploaded to a server. Everything you create is stored only on this device and is removed when you delete the app.
+* To improve the app, anonymous usage statistics (such as the number of scans and pages) are collected with Firebase Analytics. Document contents are never included.
+
+- Clear document management
+Saved documents appear in a thumbnail list. Tap one to open a detail screen with a PDF preview, the full recognized OCR text, page count, creation date, and file location. Titles can be edited anytime.
+
+- Share and export as images
+Send any PDF through the share sheet to mail, messages, Files, or another app. You can also save individual pages to your photo library as PNG or JPEG. Exported images are rendered at a consistent size independent of screen scale to keep file sizes down.
+
+GREAT FOR
+
+- Keeping paperwork searchable instead of stacked
+- Digitizing documents without uploading them to the cloud
+- A lightweight scanner that works offline, with nothing extra to learn
+- Sorting receipts, contracts, and business cards by type
+
+HOW IT WORKS
+
+1. Tap the scan button in the top right
+2. Photograph your document and finish scanning
+3. Wait a few seconds for OCR and PDF generation
+4. Open the document from the list and review the preview or OCR text
+5. Edit the title if needed, then share the PDF or save pages as images
+
+REQUIREMENTS
+
+- iOS 26.0 or later
+- An iPhone or iPad with a camera
+- Document scanning requires a VisionKit-capable device
+- Camera permission is requested on first scan; photo add permission is requested when saving images to Photos
+
+NOTES
+
+- OCR accuracy depends on the quality of the captured image (lighting, focus, angle)
+- Documents are stored only inside the app; export the PDF to move it elsewhere

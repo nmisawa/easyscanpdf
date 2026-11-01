@@ -44,3 +44,6 @@ Carthage/Build/
 
 # Claude Code
 .claude/
+
+# Firebase (環境ごとに Firebase コンソールから取得して easyscanpdf/ に配置)
+GoogleService-Info.plist

@@ -68,6 +68,7 @@ struct DocumentDetailView: View {
 
                 Button {
                     isShowingShareSheet = true
+                    AnalyticsService.log(.pdfShareOpened)
                 } label: {
                     Image(systemName: "square.and.arrow.up")
                 }
@@ -118,6 +119,7 @@ struct DocumentDetailView: View {
             do {
                 let images = try imageExporter.renderImages(from: currentDocument.pdfURL)
                 try await photoLibrarySaver.save(images: images, format: format)
+                AnalyticsService.log(.photoExported(format: format.fileExtension, pageCount: images.count))
                 savedToPhotoLibraryMessage = String(localized: "document_detail.photo_save.success")
             } catch {
                 alertMessage = error.localizedDescription

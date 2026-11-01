@@ -34,12 +34,14 @@ final class DocumentListViewModel: ObservableObject {
 
     func scanCompleted(with document: ScannedDocument) {
         isShowingScanner = false
+        AnalyticsService.log(.scanCompleted(pageCount: document.pageCount))
         selectedDocument = document
         refresh()
     }
 
     func scanFailed(_ error: Error) {
         isShowingScanner = false
+        AnalyticsService.log(.scanFailed)
         alertMessage = error.localizedDescription
     }
 
@@ -55,6 +57,7 @@ final class DocumentListViewModel: ObservableObject {
     private func deleteDocuments(withIDs ids: [UUID]) {
         do {
             try documentStore.deleteDocuments(withIDs: ids)
+            AnalyticsService.log(.documentsDeleted(count: ids.count))
 
             if let selectedDocument, ids.contains(selectedDocument.id) {
                 self.selectedDocument = nil
